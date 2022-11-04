@@ -35,7 +35,7 @@ def pasajerosEdit(request, id):
 
 def tarjetas(request):
     data = TarjetaFormulario()
-    tarjetas = Tarjeta.objets.all()
+    tarjetas = Tarjeta.objects.all()
     if request.method == 'POST':
         formulario = TarjetaFormulario(data=request.POST, Files=request.FILES)
         if formulario.is_valid():
