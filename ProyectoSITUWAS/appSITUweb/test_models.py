@@ -33,4 +33,4 @@ class PasajeroModelTest(TestCase):
     def test_cedula_max_length(self):
         pasajero=Pasajero.objects.get(id=1)
         max_length = pasajero._meta.get_field('cedula').max_length
-        self.assertEquals(max_length,10)
+        self.assertEquals(max_length,10)        
